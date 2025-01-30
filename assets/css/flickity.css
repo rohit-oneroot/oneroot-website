@@ -1,0 +1,19 @@
+.flickity-slider {
+}
+
+.gallery-cell {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.flickity-button {
+  color: #40c057 !important;
+}
+
+.flickity-prev-next-button {
+  top: 30% !important;
+}
+
+.dot.is-selected {
+  background: #40c057 !important;
+}
