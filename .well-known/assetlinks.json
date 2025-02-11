@@ -22,7 +22,7 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "enp.oneroot.marketplace",
+      "namespace": "android_app",
       "package_name": "enp.oneroot.marketplace",
       "sha256_cert_fingerprints": [
         "A0:E7:DE:88:DF:41:35:D3:94:67:3F:68:CD:63:C7:8A:A7:02:F8:C0:13:13:B5:64:33:32:6F:80:56:93:80:16"
@@ -52,7 +52,7 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "enp.oneroot.marketplace",
+      "namespace": "android_app",
       "package_name": "enp.oneroot.farmerMarketplace",
       "sha256_cert_fingerprints": [
         "F5:5D:5E:95:3C:12:16:74:24:41:0C:92:0D:71:C8:C2:5B:33:DA:9F:E9:24:2B:2B:15:86:BB:E7:F1:62:11:7F"
