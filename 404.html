@@ -1,0 +1,87 @@
+<!-- 404.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - page not found</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "segoe ui", sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .logo {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+
+      .loader {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #4caf50;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 15px;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .info {
+        font-size: 16px;
+        color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .logo {
+          max-width: 120px;
+        }
+
+        .info {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="assets/images/redirect/default.png"
+        alt="oneroot logo"
+        class="logo"
+      />
+      <div class="loader"></div>
+      <p class="info">Redirecting you...</p>
+    </div>
+
+    <script>
+      // extract the first path segment from the URL
+      const segment = window.location.pathname.split("/").filter(Boolean)[0];
+
+      // redirect based on the first path segment
+      if (segment === "buyer") {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=enp.oneroot.marketplace";
+      } else if (segment === "farmer") {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=enp.oneroot.farmerMarketplace";
+      }
+    </script>
+  </body>
+</html>
